@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZB2EXPORT</NAME>
+    <DBAPL>P</DBAPL>
+    <DBNA>PN</DBNA>
+    <SUBC>1</SUBC>
+    <APPL>P</APPL>
+    <RSTAT>K</RSTAT>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <LDBNAME>PNPCE</LDBNAME>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Export</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>B2 Cluster Export</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_DIR</KEY>
+     <ENTRY>Output Directory</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+   </TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

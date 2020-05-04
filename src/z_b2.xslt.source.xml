@@ -1,0 +1,881 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates" xmlns:ddic="http://www.sap.com/abapxml/types/dictionary" xmlns:def="http://www.sap.com/abapxml/types/defined">
+  <tt:root name="ROOT" type="?"/>
+  <tt:root name="B2" type="ddic:ZTT_B2"/>
+  <tt:template>
+    <B2>
+      <tt:loop ref=".B2">
+        <ZST_B2>
+          <PERNR tt:value-ref="PERNR"/>
+          <DATA>
+            <T_WPBP>
+              <tt:loop ref="DATA.FT_WPBP">
+                <WPBP>
+                  <APZNR tt:value-ref="APZNR"/>
+                  <BEGDA tt:value-ref="BEGDA"/>
+                  <ENDDA tt:value-ref="ENDDA"/>
+                  <MASSN tt:value-ref="MASSN"/>
+                  <MASSG tt:value-ref="MASSG"/>
+                  <STAT1 tt:value-ref="STAT1"/>
+                  <STAT2 tt:value-ref="STAT2"/>
+                  <STAT3 tt:value-ref="STAT3"/>
+                  <AKTIVJN tt:value-ref="AKTIVJN"/>
+                  <BUKRS tt:value-ref="BUKRS"/>
+                  <WERKS tt:value-ref="WERKS"/>
+                  <BTRTL tt:value-ref="BTRTL"/>
+                  <KOSTL tt:value-ref="KOSTL"/>
+                  <PERSG tt:value-ref="PERSG"/>
+                  <PERSK tt:value-ref="PERSK"/>
+                  <ABART tt:value-ref="ABART"/>
+                  <PLANS tt:value-ref="PLANS"/>
+                  <GSBER tt:value-ref="GSBER"/>
+                  <VDSK1 tt:value-ref="VDSK1"/>
+                  <ANSVH tt:value-ref="ANSVH"/>
+                  <ORGEH tt:value-ref="ORGEH"/>
+                  <STELL tt:value-ref="STELL"/>
+                  <ZTERF tt:value-ref="ZTERF"/>
+                  <SCHKZ tt:value-ref="SCHKZ"/>
+                  <EMPCT tt:value-ref="EMPCT"/>
+                  <KSOLL tt:value-ref="KSOLL"/>
+                  <ASOLL tt:value-ref="ASOLL"/>
+                  <SSOLL tt:value-ref="SSOLL"/>
+                  <KDIVI tt:value-ref="KDIVI"/>
+                  <ADIVI tt:value-ref="ADIVI"/>
+                  <SDIVI tt:value-ref="SDIVI"/>
+                  <DIVGV tt:value-ref="DIVGV"/>
+                  <BSGRD tt:value-ref="BSGRD"/>
+                  <TRFAR tt:value-ref="TRFAR"/>
+                  <TRFGB tt:value-ref="TRFGB"/>
+                  <TRFGR tt:value-ref="TRFGR"/>
+                  <TRFST tt:value-ref="TRFST"/>
+                  <KOSTVJN tt:value-ref="KOSTVJN"/>
+                  <DYSCH tt:value-ref="DYSCH"/>
+                  <ARBST tt:value-ref="ARBST"/>
+                  <WKWDY tt:value-ref="WKWDY"/>
+                  <FISTL tt:value-ref="FISTL"/>
+                  <GEBER tt:value-ref="GEBER"/>
+                  <FKBER tt:value-ref="FKBER"/>
+                  <GRANT_NBR tt:value-ref="GRANT_NBR"/>
+                  <SGMNT tt:value-ref="SGMNT"/>
+                  <BUDGET_PD tt:value-ref="BUDGET_PD"/>
+                </WPBP>
+              </tt:loop>
+            </T_WPBP>
+            <T_PSP>
+              <tt:loop ref="DATA.FT_PSP">
+                <PSP>
+                  <DATUM tt:value-ref="DATUM"/>
+                  <MOTPR tt:value-ref="MOTPR"/>
+                  <TPROG tt:value-ref="TPROG"/>
+                  <TAGTY tt:value-ref="TAGTY"/>
+                  <FTKLA tt:value-ref="FTKLA"/>
+                  <VARIA tt:value-ref="VARIA"/>
+                  <TPKLA tt:value-ref="TPKLA"/>
+                  <ZMODN tt:value-ref="ZMODN"/>
+                  <STDAZ tt:value-ref="STDAZ"/>
+                  <ACTIV tt:value-ref="ACTIV"/>
+                  <NAT01 tt:value-ref="NAT01"/>
+                  <NAT02 tt:value-ref="NAT02"/>
+                  <PAMOD tt:value-ref="PAMOD"/>
+                </PSP>
+              </tt:loop>
+            </T_PSP>
+            <T_ZES>
+              <tt:loop ref="DATA.FT_ZES">
+                <ZES>
+                  <REDAY tt:value-ref="REDAY"/>
+                  <ZTART tt:value-ref="ZTART"/>
+                  <ANZHL tt:value-ref="ANZHL"/>
+                </ZES>
+              </tt:loop>
+            </T_ZES>
+            <T_SALDO>
+              <tt:loop ref="DATA.FT_SALDO">
+                <SALDO>
+                  <ZTART tt:value-ref="ZTART"/>
+                  <ANZHL tt:value-ref="ANZHL"/>
+                </SALDO>
+              </tt:loop>
+            </T_SALDO>
+            <T_ZL>
+              <tt:loop ref="DATA.FT_ZL">
+                <ZL>
+                  <DATUM tt:value-ref="DATUM"/>
+                  <BEGUZ tt:value-ref="BEGUZ"/>
+                  <ENDUZ tt:value-ref="ENDUZ"/>
+                  <ALZNR tt:value-ref="ALZNR"/>
+                  <C1ZNR tt:value-ref="C1ZNR"/>
+                  <ABZNR tt:value-ref="ABZNR"/>
+                  <LGART tt:value-ref="LGART"/>
+                  <IFTYP tt:value-ref="IFTYP"/>
+                  <ANZHL tt:value-ref="ANZHL"/>
+                  <PRZNR tt:value-ref="PRZNR"/>
+                  <START_BEF_ZERO tt:value-ref="START_BEF_ZERO"/>
+                </ZL>
+              </tt:loop>
+            </T_ZL>
+            <T_URLAN>
+              <tt:loop ref="DATA.FT_URLAN">
+                <URLAN>
+                  <INFTY tt:value-ref="INFTY"/>
+                  <SUBTY tt:value-ref="SUBTY"/>
+                  <OBJPS tt:value-ref="OBJPS"/>
+                  <ENDDA tt:value-ref="ENDDA"/>
+                  <BEGDA tt:value-ref="BEGDA"/>
+                  <SEQNR tt:value-ref="SEQNR"/>
+                  <DATUM tt:value-ref="DATUM"/>
+                  <URART tt:value-ref="URART"/>
+                  <UANSP tt:value-ref="UANSP"/>
+                  <REWRI tt:value-ref="REWRI"/>
+                </URLAN>
+              </tt:loop>
+            </T_URLAN>
+            <T_ALP>
+              <tt:loop ref="DATA.FT_ALP">
+                <ALP>
+                  <ALZNR tt:value-ref="ALZNR"/>
+                  <BEGDA tt:value-ref="BEGDA"/>
+                  <ENDDA tt:value-ref="ENDDA"/>
+                  <BEGUZ tt:value-ref="BEGUZ"/>
+                  <ENDUZ tt:value-ref="ENDUZ"/>
+                  <ANZHL tt:value-ref="ANZHL"/>
+                  <ZEINH tt:value-ref="ZEINH"/>
+                  <BWGRL tt:value-ref="BWGRL"/>
+                  <OTYPE tt:value-ref="OTYPE"/>
+                  <PLANS tt:value-ref="PLANS"/>
+                  <PRAKN tt:value-ref="PRAKN"/>
+                  <PRAKZ tt:value-ref="PRAKZ"/>
+                  <AUFKZ tt:value-ref="AUFKZ"/>
+                  <BETRG tt:value-ref="BETRG"/>
+                  <TRFGR tt:value-ref="TRFGR"/>
+                  <TRFST tt:value-ref="TRFST"/>
+                  <VERSL tt:value-ref="VERSL"/>
+                  <WAERS tt:value-ref="WAERS"/>
+                  <WTART tt:value-ref="WTART"/>
+                  <START_BEF_ZERO tt:value-ref="START_BEF_ZERO"/>
+                </ALP>
+              </tt:loop>
+            </T_ALP>
+            <T_C1>
+              <tt:loop ref="DATA.FT_C1">
+                <C1>
+                  <C1ZNR tt:value-ref="C1ZNR"/>
+                  <BUKRS tt:value-ref="BUKRS"/>
+                  <GSBER tt:value-ref="GSBER"/>
+                  <KOKRS tt:value-ref="KOKRS"/>
+                  <KOSTL tt:value-ref="KOSTL"/>
+                  <AUFNR tt:value-ref="AUFNR"/>
+                  <KSTRG tt:value-ref="KSTRG"/>
+                  <POSNR tt:value-ref="POSNR"/>
+                  <NPLNR tt:value-ref="NPLNR"/>
+                  <VORNR tt:value-ref="VORNR"/>
+                  <KDAUF tt:value-ref="KDAUF"/>
+                  <KDPOS tt:value-ref="KDPOS"/>
+                  <PAOBJNR tt:value-ref="PAOBJNR"/>
+                  <PRZNR tt:value-ref="PRZNR"/>
+                  <FISTL tt:value-ref="FISTL"/>
+                  <FIPOS tt:value-ref="FIPOS"/>
+                  <GEBER tt:value-ref="GEBER"/>
+                  <EBELN tt:value-ref="EBELN"/>
+                  <EBELP tt:value-ref="EBELP"/>
+                  <LSTNR tt:value-ref="LSTNR"/>
+                  <LTLST tt:value-ref="LTLST"/>
+                  <SBUKR tt:value-ref="SBUKR"/>
+                  <SGSBR tt:value-ref="SGSBR"/>
+                  <SKOST tt:value-ref="SKOST"/>
+                  <LSTAR tt:value-ref="LSTAR"/>
+                  <EXBEL tt:value-ref="EXBEL"/>
+                  <MWSKZ tt:value-ref="MWSKZ"/>
+                  <OTYPE tt:value-ref="OTYPE"/>
+                  <STELL tt:value-ref="STELL"/>
+                  <POHRS tt:value-ref="POHRS"/>
+                  <DART tt:value-ref="DART"/>
+                  <UDART tt:value-ref="UDART"/>
+                  <SGTXT tt:value-ref="SGTXT"/>
+                  <TXJCD tt:value-ref="TXJCD"/>
+                  <FIPEX tt:value-ref="FIPEX"/>
+                  <FKBER tt:value-ref="FKBER"/>
+                  <GRANT_NBR tt:value-ref="GRANT_NBR"/>
+                  <SGEBER tt:value-ref="SGEBER"/>
+                  <SFKBER tt:value-ref="SFKBER"/>
+                  <SGRANT_NBR tt:value-ref="SGRANT_NBR"/>
+                  <SEGMENT tt:value-ref="SEGMENT"/>
+                  <SSEGMENT tt:value-ref="SSEGMENT"/>
+                  <BUDGET_PD tt:value-ref="BUDGET_PD"/>
+                  <SBUDGET_PD tt:value-ref="SBUDGET_PD"/>
+                </C1>
+              </tt:loop>
+            </T_C1>
+            <T_VS>
+              <tt:loop ref="DATA.FT_VS">
+                <VS>
+                  <DATUM tt:value-ref="DATUM"/>
+                  <VARIA tt:value-ref="VARIA"/>
+                  <ANZHL tt:value-ref="ANZHL"/>
+                  <IDENT tt:value-ref="IDENT"/>
+                </VS>
+              </tt:loop>
+            </T_VS>
+            <T_CVS>
+              <tt:loop ref="DATA.FT_CVS">
+                <CVS>
+                  <VARIA tt:value-ref="VARIA"/>
+                  <ANZHL tt:value-ref="ANZHL"/>
+                  <IDENT tt:value-ref="IDENT"/>
+                </CVS>
+              </tt:loop>
+            </T_CVS>
+            <T_FEHLER>
+              <tt:loop ref="DATA.FT_FEHLER">
+                <FEHLER>
+                  <LDATE tt:value-ref="LDATE"/>
+                  <LTIME tt:value-ref="LTIME"/>
+                  <ERRTY tt:value-ref="ERRTY"/>
+                  <ERROR tt:value-ref="ERROR"/>
+                  <MESTY tt:value-ref="MESTY"/>
+                  <HISTF tt:value-ref="HISTF"/>
+                  <UTEXT tt:value-ref="UTEXT"/>
+                  <PDSNR tt:value-ref="PDSNR"/>
+                  <STATUS tt:value-ref="STATUS"/>
+                  <AEDTM tt:value-ref="AEDTM"/>
+                  <UNAME tt:value-ref="UNAME"/>
+                  <OPERNR tt:value-ref="OPERNR"/>
+                </FEHLER>
+              </tt:loop>
+            </T_FEHLER>
+            <T_QTBASE>
+              <tt:loop ref="DATA.FT_QTBASE">
+                <QTBASE>
+                  <BASNR tt:value-ref="BASNR"/>
+                  <BEGDA tt:value-ref="BEGDA"/>
+                  <ENDDA tt:value-ref="ENDDA"/>
+                  <ANZHL tt:value-ref="ANZHL"/>
+                  <NUPER tt:value-ref="NUPER"/>
+                  <NFREQ tt:value-ref="NFREQ"/>
+                  <BABEG tt:value-ref="BABEG"/>
+                  <BAEND tt:value-ref="BAEND"/>
+                  <BASDT tt:value-ref="BASDT"/>
+                  <BASRV tt:value-ref="BASRV"/>
+                  <BASRU tt:value-ref="BASRU"/>
+                </QTBASE>
+              </tt:loop>
+            </T_QTBASE>
+            <T_QTACC>
+              <tt:loop ref="DATA.FT_QTACC">
+                <QTACC>
+                  <GDATE tt:value-ref="GDATE"/>
+                  <QTYPE tt:value-ref="QTYPE"/>
+                  <ACCOP tt:value-ref="ACCOP"/>
+                  <ACCAC tt:value-ref="ACCAC"/>
+                  <ACCCU tt:value-ref="ACCCU"/>
+                  <ACCTR tt:value-ref="ACCTR"/>
+                  <TRANS tt:value-ref="TRANS"/>
+                  <ACCAC_REV tt:value-ref="ACCAC_REV"/>
+                  <MAXEX_ACC tt:value-ref="MAXEX_ACC"/>
+                  <MAXEX_ENT tt:value-ref="MAXEX_ENT"/>
+                  <ACCFR tt:value-ref="ACCFR"/>
+                  <AFREQ tt:value-ref="AFREQ"/>
+                  <ACCDL tt:value-ref="ACCDL"/>
+                  <LVPER tt:value-ref="LVPER"/>
+                  <LFREQ tt:value-ref="LFREQ"/>
+                  <LVDAT tt:value-ref="LVDAT"/>
+                  <LSIZE tt:value-ref="LSIZE"/>
+                  <LVMAX_ACC tt:value-ref="LVMAX_ACC"/>
+                  <LVRND_ACC tt:value-ref="LVRND_ACC"/>
+                  <LVCUT_ACC tt:value-ref="LVCUT_ACC"/>
+                  <LVMAX_ENT tt:value-ref="LVMAX_ENT"/>
+                  <LVRND_ENT tt:value-ref="LVRND_ENT"/>
+                  <BEGDA tt:value-ref="BEGDA"/>
+                  <ENDDA tt:value-ref="ENDDA"/>
+                  <BEGDE tt:value-ref="BEGDE"/>
+                  <ENDDE tt:value-ref="ENDDE"/>
+                  <PRVQT tt:value-ref="PRVQT"/>
+                  <BASNR tt:value-ref="BASNR"/>
+                  <LRULE tt:value-ref="LRULE"/>
+                </QTACC>
+              </tt:loop>
+            </T_QTACC>
+            <T_QTTRANS>
+              <tt:loop ref="DATA.FT_QTTRANS">
+                <QTTRANS>
+                  <GDATE tt:value-ref="GDATE"/>
+                  <QTYPE tt:value-ref="QTYPE"/>
+                  <ACCOP tt:value-ref="ACCOP"/>
+                  <LVPER tt:value-ref="LVPER"/>
+                  <LFREQ tt:value-ref="LFREQ"/>
+                  <LVDAT tt:value-ref="LVDAT"/>
+                  <LVNUM tt:value-ref="LVNUM"/>
+                  <LSIZE tt:value-ref="LSIZE"/>
+                  <LVMAX tt:value-ref="LVMAX"/>
+                  <LVRND tt:value-ref="LVRND"/>
+                  <BEGDA tt:value-ref="BEGDA"/>
+                  <ENDDA tt:value-ref="ENDDA"/>
+                  <BEGDE tt:value-ref="BEGDE"/>
+                  <ENDDE tt:value-ref="ENDDE"/>
+                  <LRULE tt:value-ref="LRULE"/>
+                </QTTRANS>
+              </tt:loop>
+            </T_QTTRANS>
+            <T_AT>
+              <tt:loop ref="DATA.FT_AT">
+                <AT>
+                  <LDATE tt:value-ref="LDATE"/>
+                  <PRIDX tt:value-ref="PRIDX"/>
+                  <WSID2 tt:value-ref="WSID2"/>
+                  <PRSUS tt:value-ref="PRSUS"/>
+                  <MATMS tt:value-ref="MATMS"/>
+                </AT>
+              </tt:loop>
+            </T_AT>
+            <T_PT>
+              <tt:loop ref="DATA.FT_PT">
+                <PT>
+                  <LDATE tt:value-ref="LDATE"/>
+                  <BEGTM tt:value-ref="BEGTM"/>
+                  <ENDTM tt:value-ref="ENDTM"/>
+                  <BGCOD tt:value-ref="BGCOD"/>
+                  <EGCOD tt:value-ref="EGCOD"/>
+                  <BTERM tt:value-ref="BTERM"/>
+                  <ETERM tt:value-ref="ETERM"/>
+                  <BSART tt:value-ref="BSART"/>
+                  <ESART tt:value-ref="ESART"/>
+                  <STAT1 tt:value-ref="STAT1"/>
+                  <STAT2 tt:value-ref="STAT2"/>
+                  <COGOS tt:value-ref="COGOS"/>
+                  <AESTA tt:value-ref="AESTA"/>
+                  <BUSER tt:value-ref="BUSER"/>
+                  <EUSER tt:value-ref="EUSER"/>
+                  <BPDSN tt:value-ref="BPDSN"/>
+                  <EPDSN tt:value-ref="EPDSN"/>
+                  <START_BEF_ZERO tt:value-ref="START_BEF_ZERO"/>
+                </PT>
+              </tt:loop>
+            </T_PT>
+            <T_AB>
+              <tt:loop ref="DATA.FT_AB">
+                <AB>
+                  <ABZNR tt:value-ref="ABZNR"/>
+                  <ABART tt:value-ref="ABART"/>
+                  <APZNR tt:value-ref="APZNR"/>
+                  <CNTR1 tt:value-ref="CNTR1"/>
+                  <CNTR2 tt:value-ref="CNTR2"/>
+                  <CNTR3 tt:value-ref="CNTR3"/>
+                  <ENDDA tt:value-ref="ENDDA"/>
+                  <BEGDA tt:value-ref="BEGDA"/>
+                  <VTKEN tt:value-ref="VTKEN"/>
+                  <BEGUZ tt:value-ref="BEGUZ"/>
+                  <ENDUZ tt:value-ref="ENDUZ"/>
+                  <AWART tt:value-ref="AWART"/>
+                  <ABWTG tt:value-ref="ABWTG"/>
+                  <STDAZ tt:value-ref="STDAZ"/>
+                  <ABRTG tt:value-ref="ABRTG"/>
+                  <ABRST tt:value-ref="ABRST"/>
+                  <KALTG tt:value-ref="KALTG"/>
+                  <KENN1 tt:value-ref="KENN1"/>
+                  <KENN2 tt:value-ref="KENN2"/>
+                  <KLBEW tt:value-ref="KLBEW"/>
+                  <PSARB tt:value-ref="PSARB"/>
+                  <OBEGD tt:value-ref="OBEGD"/>
+                  <OENDD tt:value-ref="OENDD"/>
+                  <REFEX tt:value-ref="REFEX"/>
+                  <ORDEX tt:value-ref="ORDEX"/>
+                  <SUBTY tt:value-ref="SUBTY"/>
+                  <OBJPS tt:value-ref="OBJPS"/>
+                  <SPRPS tt:value-ref="SPRPS"/>
+                  <SEQNR tt:value-ref="SEQNR"/>
+                  <ALLDF tt:value-ref="ALLDF"/>
+                  <HRSIF tt:value-ref="HRSIF"/>
+                  <OCABS tt:value-ref="OCABS"/>
+                  <DOCNR tt:value-ref="DOCNR"/>
+                  <ALZNR tt:value-ref="ALZNR"/>
+                  <NXDFL tt:value-ref="NXDFL"/>
+                  <START_BEF_ZERO tt:value-ref="START_BEF_ZERO"/>
+                </AB>
+              </tt:loop>
+            </T_AB>
+            <T_CWST>
+              <tt:loop ref="DATA.FT_CWST">
+                <CWST>
+                  <LDATE tt:value-ref="LDATE"/>
+                  <RUECK tt:value-ref="RUECK"/>
+                  <WSID1 tt:value-ref="WSID1"/>
+                  <WSID2 tt:value-ref="WSID2"/>
+                  <SRCSYS tt:value-ref="SRCSYS"/>
+                  <BEGTM tt:value-ref="BEGTM"/>
+                  <ENDTM tt:value-ref="ENDTM"/>
+                  <PDSNR_AASS tt:value-ref="PDSNR_AASS"/>
+                  <PDSNR_LAST tt:value-ref="PDSNR_LAST"/>
+                  <DES1F tt:value-ref="DES1F"/>
+                  <DES2F tt:value-ref="DES2F"/>
+                  <SMJRF tt:value-ref="SMJRF"/>
+                  <EXUPD tt:value-ref="EXUPD"/>
+                  <VGW01 tt:value-ref="VGW01"/>
+                  <VGE01 tt:value-ref="VGE01"/>
+                  <SOW01 tt:value-ref="SOW01"/>
+                  <SOE01 tt:value-ref="SOE01"/>
+                  <RUW01 tt:value-ref="RUW01"/>
+                  <RUE01 tt:value-ref="RUE01"/>
+                  <BEG01 tt:value-ref="BEG01"/>
+                  <END01 tt:value-ref="END01"/>
+                  <VGW02 tt:value-ref="VGW02"/>
+                  <VGE02 tt:value-ref="VGE02"/>
+                  <SOW02 tt:value-ref="SOW02"/>
+                  <SOE02 tt:value-ref="SOE02"/>
+                  <RUW02 tt:value-ref="RUW02"/>
+                  <RUE02 tt:value-ref="RUE02"/>
+                  <BEG02 tt:value-ref="BEG02"/>
+                  <END02 tt:value-ref="END02"/>
+                  <VGW03 tt:value-ref="VGW03"/>
+                  <VGE03 tt:value-ref="VGE03"/>
+                  <SOW03 tt:value-ref="SOW03"/>
+                  <SOE03 tt:value-ref="SOE03"/>
+                  <RUW03 tt:value-ref="RUW03"/>
+                  <RUE03 tt:value-ref="RUE03"/>
+                  <BEG03 tt:value-ref="BEG03"/>
+                  <END03 tt:value-ref="END03"/>
+                  <VGW04 tt:value-ref="VGW04"/>
+                  <VGE04 tt:value-ref="VGE04"/>
+                  <SOW04 tt:value-ref="SOW04"/>
+                  <SOE04 tt:value-ref="SOE04"/>
+                  <RUW04 tt:value-ref="RUW04"/>
+                  <RUE04 tt:value-ref="RUE04"/>
+                  <BEG04 tt:value-ref="BEG04"/>
+                  <END04 tt:value-ref="END04"/>
+                  <VGW05 tt:value-ref="VGW05"/>
+                  <VGE05 tt:value-ref="VGE05"/>
+                  <SOW05 tt:value-ref="SOW05"/>
+                  <SOE05 tt:value-ref="SOE05"/>
+                  <RUW05 tt:value-ref="RUW05"/>
+                  <RUE05 tt:value-ref="RUE05"/>
+                  <BEG05 tt:value-ref="BEG05"/>
+                  <END05 tt:value-ref="END05"/>
+                  <VGW06 tt:value-ref="VGW06"/>
+                  <VGE06 tt:value-ref="VGE06"/>
+                  <SOW06 tt:value-ref="SOW06"/>
+                  <SOE06 tt:value-ref="SOE06"/>
+                  <RUW06 tt:value-ref="RUW06"/>
+                  <RUE06 tt:value-ref="RUE06"/>
+                  <BEG06 tt:value-ref="BEG06"/>
+                  <END06 tt:value-ref="END06"/>
+                  <MEINH tt:value-ref="MEINH"/>
+                  <LMNGA tt:value-ref="LMNGA"/>
+                  <XMNGA tt:value-ref="XMNGA"/>
+                  <GRUND tt:value-ref="GRUND"/>
+                  <BMSCH tt:value-ref="BMSCH"/>
+                  <PP_RUW01 tt:value-ref="PP_RUW01"/>
+                  <PP_RUE01 tt:value-ref="PP_RUE01"/>
+                  <PP_RUW02 tt:value-ref="PP_RUW02"/>
+                  <PP_RUE02 tt:value-ref="PP_RUE02"/>
+                  <PP_RUW03 tt:value-ref="PP_RUW03"/>
+                  <PP_RUE03 tt:value-ref="PP_RUE03"/>
+                  <PP_RUW04 tt:value-ref="PP_RUW04"/>
+                  <PP_RUE04 tt:value-ref="PP_RUE04"/>
+                  <PP_RUW05 tt:value-ref="PP_RUW05"/>
+                  <PP_RUE05 tt:value-ref="PP_RUE05"/>
+                  <PP_RUW06 tt:value-ref="PP_RUW06"/>
+                  <PP_RUE06 tt:value-ref="PP_RUE06"/>
+                  <SCRPR tt:value-ref="SCRPR"/>
+                  <KUM01 tt:value-ref="KUM01"/>
+                  <LOARR tt:value-ref="LOARR"/>
+                  <LOGRR tt:value-ref="LOGRR"/>
+                  <TRFST tt:value-ref="TRFST"/>
+                  <LSTYP tt:value-ref="LSTYP"/>
+                  <OPCLS tt:value-ref="OPCLS"/>
+                  <GRUNR tt:value-ref="GRUNR"/>
+                  <GRUNA tt:value-ref="GRUNA"/>
+                  <PDC_USRUP tt:value-ref="PDC_USRUP"/>
+                  <USER2 tt:value-ref="USER2"/>
+                  <BUKRS tt:value-ref="BUKRS"/>
+                  <GSBER tt:value-ref="GSBER"/>
+                  <KOSTL tt:value-ref="KOSTL"/>
+                  <LTLST tt:value-ref="LTLST"/>
+                  <AUFNR tt:value-ref="AUFNR"/>
+                  <KSTRG tt:value-ref="KSTRG"/>
+                  <POSID tt:value-ref="POSID"/>
+                  <NPLNR tt:value-ref="NPLNR"/>
+                  <VORNR tt:value-ref="VORNR"/>
+                  <KDAUF tt:value-ref="KDAUF"/>
+                  <KDPOS tt:value-ref="KDPOS"/>
+                  <PRZNR tt:value-ref="PRZNR"/>
+                  <FISTL tt:value-ref="FISTL"/>
+                  <GEBER tt:value-ref="GEBER"/>
+                  <SKOST tt:value-ref="SKOST"/>
+                  <SBUKR tt:value-ref="SBUKR"/>
+                  <SGSBR tt:value-ref="SGSBR"/>
+                  <SGTXT tt:value-ref="SGTXT"/>
+                  <DART tt:value-ref="DART"/>
+                  <UDART tt:value-ref="UDART"/>
+                  <BUDGET_PD tt:value-ref="BUDGET_PD"/>
+                  <PRAKN tt:value-ref="PRAKN"/>
+                  <PRAKZ tt:value-ref="PRAKZ"/>
+                  <OTYPE tt:value-ref="OTYPE"/>
+                  <PLANS tt:value-ref="PLANS"/>
+                  <AUFKZ tt:value-ref="AUFKZ"/>
+                  <BWGRL tt:value-ref="BWGRL"/>
+                  <WAERS tt:value-ref="WAERS"/>
+                  <LOGOS tt:value-ref="LOGOS"/>
+                  <ENDDA tt:value-ref="ENDDA"/>
+                  <COMCH tt:value-ref="COMCH"/>
+                  <FKBER tt:value-ref="FKBER"/>
+                  <GRANT_NBR tt:value-ref="GRANT_NBR"/>
+                  <FIPOS tt:value-ref="FIPOS"/>
+                  <FIPEX tt:value-ref="FIPEX"/>
+                </CWST>
+              </tt:loop>
+            </T_CWST>
+            <T_WST>
+              <tt:loop ref="DATA.FT_WST">
+                <WST>
+                  <LDATE tt:value-ref="LDATE"/>
+                  <RUECK tt:value-ref="RUECK"/>
+                  <WSID1 tt:value-ref="WSID1"/>
+                  <WSID2 tt:value-ref="WSID2"/>
+                  <SRCSYS tt:value-ref="SRCSYS"/>
+                  <BEGTM tt:value-ref="BEGTM"/>
+                  <ENDTM tt:value-ref="ENDTM"/>
+                  <PDSNR_AASS tt:value-ref="PDSNR_AASS"/>
+                  <PDSNR_LAST tt:value-ref="PDSNR_LAST"/>
+                  <DES1F tt:value-ref="DES1F"/>
+                  <DES2F tt:value-ref="DES2F"/>
+                  <SMJRF tt:value-ref="SMJRF"/>
+                  <EXUPD tt:value-ref="EXUPD"/>
+                  <VGW01 tt:value-ref="VGW01"/>
+                  <VGE01 tt:value-ref="VGE01"/>
+                  <SOW01 tt:value-ref="SOW01"/>
+                  <SOE01 tt:value-ref="SOE01"/>
+                  <RUW01 tt:value-ref="RUW01"/>
+                  <RUE01 tt:value-ref="RUE01"/>
+                  <BEG01 tt:value-ref="BEG01"/>
+                  <END01 tt:value-ref="END01"/>
+                  <VGW02 tt:value-ref="VGW02"/>
+                  <VGE02 tt:value-ref="VGE02"/>
+                  <SOW02 tt:value-ref="SOW02"/>
+                  <SOE02 tt:value-ref="SOE02"/>
+                  <RUW02 tt:value-ref="RUW02"/>
+                  <RUE02 tt:value-ref="RUE02"/>
+                  <BEG02 tt:value-ref="BEG02"/>
+                  <END02 tt:value-ref="END02"/>
+                  <VGW03 tt:value-ref="VGW03"/>
+                  <VGE03 tt:value-ref="VGE03"/>
+                  <SOW03 tt:value-ref="SOW03"/>
+                  <SOE03 tt:value-ref="SOE03"/>
+                  <RUW03 tt:value-ref="RUW03"/>
+                  <RUE03 tt:value-ref="RUE03"/>
+                  <BEG03 tt:value-ref="BEG03"/>
+                  <END03 tt:value-ref="END03"/>
+                  <VGW04 tt:value-ref="VGW04"/>
+                  <VGE04 tt:value-ref="VGE04"/>
+                  <SOW04 tt:value-ref="SOW04"/>
+                  <SOE04 tt:value-ref="SOE04"/>
+                  <RUW04 tt:value-ref="RUW04"/>
+                  <RUE04 tt:value-ref="RUE04"/>
+                  <BEG04 tt:value-ref="BEG04"/>
+                  <END04 tt:value-ref="END04"/>
+                  <VGW05 tt:value-ref="VGW05"/>
+                  <VGE05 tt:value-ref="VGE05"/>
+                  <SOW05 tt:value-ref="SOW05"/>
+                  <SOE05 tt:value-ref="SOE05"/>
+                  <RUW05 tt:value-ref="RUW05"/>
+                  <RUE05 tt:value-ref="RUE05"/>
+                  <BEG05 tt:value-ref="BEG05"/>
+                  <END05 tt:value-ref="END05"/>
+                  <VGW06 tt:value-ref="VGW06"/>
+                  <VGE06 tt:value-ref="VGE06"/>
+                  <SOW06 tt:value-ref="SOW06"/>
+                  <SOE06 tt:value-ref="SOE06"/>
+                  <RUW06 tt:value-ref="RUW06"/>
+                  <RUE06 tt:value-ref="RUE06"/>
+                  <BEG06 tt:value-ref="BEG06"/>
+                  <END06 tt:value-ref="END06"/>
+                  <MEINH tt:value-ref="MEINH"/>
+                  <LMNGA tt:value-ref="LMNGA"/>
+                  <XMNGA tt:value-ref="XMNGA"/>
+                  <GRUND tt:value-ref="GRUND"/>
+                  <BMSCH tt:value-ref="BMSCH"/>
+                  <PP_RUW01 tt:value-ref="PP_RUW01"/>
+                  <PP_RUE01 tt:value-ref="PP_RUE01"/>
+                  <PP_RUW02 tt:value-ref="PP_RUW02"/>
+                  <PP_RUE02 tt:value-ref="PP_RUE02"/>
+                  <PP_RUW03 tt:value-ref="PP_RUW03"/>
+                  <PP_RUE03 tt:value-ref="PP_RUE03"/>
+                  <PP_RUW04 tt:value-ref="PP_RUW04"/>
+                  <PP_RUE04 tt:value-ref="PP_RUE04"/>
+                  <PP_RUW05 tt:value-ref="PP_RUW05"/>
+                  <PP_RUE05 tt:value-ref="PP_RUE05"/>
+                  <PP_RUW06 tt:value-ref="PP_RUW06"/>
+                  <PP_RUE06 tt:value-ref="PP_RUE06"/>
+                  <SCRPR tt:value-ref="SCRPR"/>
+                  <KUM01 tt:value-ref="KUM01"/>
+                  <LOARR tt:value-ref="LOARR"/>
+                  <LOGRR tt:value-ref="LOGRR"/>
+                  <TRFST tt:value-ref="TRFST"/>
+                  <LSTYP tt:value-ref="LSTYP"/>
+                  <OPCLS tt:value-ref="OPCLS"/>
+                  <GRUNR tt:value-ref="GRUNR"/>
+                  <GRUNA tt:value-ref="GRUNA"/>
+                  <PDC_USRUP tt:value-ref="PDC_USRUP"/>
+                  <USER2 tt:value-ref="USER2"/>
+                  <BUKRS tt:value-ref="BUKRS"/>
+                  <GSBER tt:value-ref="GSBER"/>
+                  <KOSTL tt:value-ref="KOSTL"/>
+                  <LTLST tt:value-ref="LTLST"/>
+                  <AUFNR tt:value-ref="AUFNR"/>
+                  <KSTRG tt:value-ref="KSTRG"/>
+                  <POSID tt:value-ref="POSID"/>
+                  <NPLNR tt:value-ref="NPLNR"/>
+                  <VORNR tt:value-ref="VORNR"/>
+                  <KDAUF tt:value-ref="KDAUF"/>
+                  <KDPOS tt:value-ref="KDPOS"/>
+                  <PRZNR tt:value-ref="PRZNR"/>
+                  <FISTL tt:value-ref="FISTL"/>
+                  <GEBER tt:value-ref="GEBER"/>
+                  <SKOST tt:value-ref="SKOST"/>
+                  <SBUKR tt:value-ref="SBUKR"/>
+                  <SGSBR tt:value-ref="SGSBR"/>
+                  <SGTXT tt:value-ref="SGTXT"/>
+                  <DART tt:value-ref="DART"/>
+                  <UDART tt:value-ref="UDART"/>
+                  <BUDGET_PD tt:value-ref="BUDGET_PD"/>
+                  <PRAKN tt:value-ref="PRAKN"/>
+                  <PRAKZ tt:value-ref="PRAKZ"/>
+                  <OTYPE tt:value-ref="OTYPE"/>
+                  <PLANS tt:value-ref="PLANS"/>
+                  <AUFKZ tt:value-ref="AUFKZ"/>
+                  <BWGRL tt:value-ref="BWGRL"/>
+                  <WAERS tt:value-ref="WAERS"/>
+                  <LOGOS tt:value-ref="LOGOS"/>
+                  <ENDDA tt:value-ref="ENDDA"/>
+                  <COMCH tt:value-ref="COMCH"/>
+                  <FKBER tt:value-ref="FKBER"/>
+                  <GRANT_NBR tt:value-ref="GRANT_NBR"/>
+                  <FIPOS tt:value-ref="FIPOS"/>
+                  <FIPEX tt:value-ref="FIPEX"/>
+                </WST>
+              </tt:loop>
+            </T_WST>
+            <T_ANWES>
+              <tt:loop ref="DATA.FT_ANWES">
+                <ANWES>
+                  <PRZNR tt:value-ref="PRZNR"/>
+                  <ENDDA tt:value-ref="ENDDA"/>
+                  <BEGDA tt:value-ref="BEGDA"/>
+                  <BEGUZ tt:value-ref="BEGUZ"/>
+                  <ENDUZ tt:value-ref="ENDUZ"/>
+                  <VTKEN tt:value-ref="VTKEN"/>
+                  <AWART tt:value-ref="AWART"/>
+                  <ABWTG tt:value-ref="ABWTG"/>
+                  <STDAZ tt:value-ref="STDAZ"/>
+                  <ABRTG tt:value-ref="ABRTG"/>
+                  <ABRST tt:value-ref="ABRST"/>
+                  <KALTG tt:value-ref="KALTG"/>
+                  <VERSL tt:value-ref="VERSL"/>
+                  <LGART tt:value-ref="LGART"/>
+                  <ALLDF tt:value-ref="ALLDF"/>
+                  <HRSIF tt:value-ref="HRSIF"/>
+                  <REFEX tt:value-ref="REFEX"/>
+                  <ORDEX tt:value-ref="ORDEX"/>
+                  <SUBTY tt:value-ref="SUBTY"/>
+                  <OBJPS tt:value-ref="OBJPS"/>
+                  <SPRPS tt:value-ref="SPRPS"/>
+                  <SEQNR tt:value-ref="SEQNR"/>
+                  <FAPRS tt:value-ref="FAPRS"/>
+                  <KEPAU tt:value-ref="KEPAU"/>
+                  <EXPAU tt:value-ref="EXPAU"/>
+                  <PBEG1 tt:value-ref="PBEG1"/>
+                  <PEND1 tt:value-ref="PEND1"/>
+                  <PBEZ1 tt:value-ref="PBEZ1"/>
+                  <PUNB1 tt:value-ref="PUNB1"/>
+                  <PBEG2 tt:value-ref="PBEG2"/>
+                  <PEND2 tt:value-ref="PEND2"/>
+                  <PBEZ2 tt:value-ref="PBEZ2"/>
+                  <PUNB2 tt:value-ref="PUNB2"/>
+                  <NXDFL tt:value-ref="NXDFL"/>
+                </ANWES>
+              </tt:loop>
+            </T_ANWES>
+            <T_VERT>
+              <tt:loop ref="DATA.FT_VERT">
+                <VERT>
+                  <BEGDA tt:value-ref="BEGDA"/>
+                  <ENDDA tt:value-ref="ENDDA"/>
+                  <VTKEN tt:value-ref="VTKEN"/>
+                  <BEGUZ tt:value-ref="BEGUZ"/>
+                  <ENDUZ tt:value-ref="ENDUZ"/>
+                  <VTART tt:value-ref="VTART"/>
+                  <TPKLA tt:value-ref="TPKLA"/>
+                  <TAGTY tt:value-ref="TAGTY"/>
+                  <ZEITY tt:value-ref="ZEITY"/>
+                  <MOFID tt:value-ref="MOFID"/>
+                  <MOSID tt:value-ref="MOSID"/>
+                  <SCHKZ tt:value-ref="SCHKZ"/>
+                  <MOTPR tt:value-ref="MOTPR"/>
+                  <VARIA tt:value-ref="VARIA"/>
+                  <TPROG tt:value-ref="TPROG"/>
+                  <BUKRS tt:value-ref="BUKRS"/>
+                  <WERKS tt:value-ref="WERKS"/>
+                  <PLANS tt:value-ref="PLANS"/>
+                  <PBEG1 tt:value-ref="PBEG1"/>
+                  <PEND1 tt:value-ref="PEND1"/>
+                  <PBEZ1 tt:value-ref="PBEZ1"/>
+                  <PUNB1 tt:value-ref="PUNB1"/>
+                  <PBEG2 tt:value-ref="PBEG2"/>
+                  <PEND2 tt:value-ref="PEND2"/>
+                  <PBEZ2 tt:value-ref="PBEZ2"/>
+                  <PUNB2 tt:value-ref="PUNB2"/>
+                  <OBJPS tt:value-ref="OBJPS"/>
+                  <SEQNR tt:value-ref="SEQNR"/>
+                  <NXDFL tt:value-ref="NXDFL"/>
+                </VERT>
+              </tt:loop>
+            </T_VERT>
+            <T_RUFB>
+              <tt:loop ref="DATA.FT_RUFB">
+                <RUFB>
+                  <ENDDA tt:value-ref="ENDDA"/>
+                  <BEGDA tt:value-ref="BEGDA"/>
+                  <VTKEN tt:value-ref="VTKEN"/>
+                  <BEGUZ tt:value-ref="BEGUZ"/>
+                  <ENDUZ tt:value-ref="ENDUZ"/>
+                  <STABY tt:value-ref="STABY"/>
+                  <ZEITY tt:value-ref="ZEITY"/>
+                  <MOFID tt:value-ref="MOFID"/>
+                  <MOSID tt:value-ref="MOSID"/>
+                  <SCHKZ tt:value-ref="SCHKZ"/>
+                  <MOTPR tt:value-ref="MOTPR"/>
+                  <VARIA tt:value-ref="VARIA"/>
+                  <TPROG tt:value-ref="TPROG"/>
+                  <OBJPS tt:value-ref="OBJPS"/>
+                  <SEQNR tt:value-ref="SEQNR"/>
+                </RUFB>
+              </tt:loop>
+            </T_RUFB>
+            <T_MEHR>
+              <tt:loop ref="DATA.FT_MEHR">
+                <MEHR>
+                  <ENDDA tt:value-ref="ENDDA"/>
+                  <BEGDA tt:value-ref="BEGDA"/>
+                  <VTKEN tt:value-ref="VTKEN"/>
+                  <BEGUZ tt:value-ref="BEGUZ"/>
+                  <ENDUZ tt:value-ref="ENDUZ"/>
+                  <VERSL tt:value-ref="VERSL"/>
+                  <PBEG1 tt:value-ref="PBEG1"/>
+                  <PEND1 tt:value-ref="PEND1"/>
+                  <PBEZ1 tt:value-ref="PBEZ1"/>
+                  <PUNB1 tt:value-ref="PUNB1"/>
+                  <PBEG2 tt:value-ref="PBEG2"/>
+                  <PEND2 tt:value-ref="PEND2"/>
+                  <PBEZ2 tt:value-ref="PBEZ2"/>
+                  <PUNB2 tt:value-ref="PUNB2"/>
+                  <PBEG3 tt:value-ref="PBEG3"/>
+                  <PEND3 tt:value-ref="PEND3"/>
+                  <PBEZ3 tt:value-ref="PBEZ3"/>
+                  <PUNB3 tt:value-ref="PUNB3"/>
+                  <PBEG4 tt:value-ref="PBEG4"/>
+                  <PEND4 tt:value-ref="PEND4"/>
+                  <PBEZ4 tt:value-ref="PBEZ4"/>
+                  <PUNB4 tt:value-ref="PUNB4"/>
+                  <OBJPS tt:value-ref="OBJPS"/>
+                  <SEQNR tt:value-ref="SEQNR"/>
+                </MEHR>
+              </tt:loop>
+            </T_MEHR>
+            <T_ANWKONTI>
+              <tt:loop ref="DATA.FT_ANWKONTI">
+                <ANWKONTI>
+                  <INFTY tt:value-ref="INFTY"/>
+                  <SUBTY tt:value-ref="SUBTY"/>
+                  <OBJPS tt:value-ref="OBJPS"/>
+                  <SEQNR tt:value-ref="SEQNR"/>
+                  <ENDDA tt:value-ref="ENDDA"/>
+                  <BEGDA tt:value-ref="BEGDA"/>
+                  <BEGUZ tt:value-ref="BEGUZ"/>
+                  <ENDUZ tt:value-ref="ENDUZ"/>
+                  <KTART tt:value-ref="KTART"/>
+                  <ANZHL tt:value-ref="ANZHL"/>
+                  <ZEINH tt:value-ref="ZEINH"/>
+                  <VERSL tt:value-ref="VERSL"/>
+                  <KVERB tt:value-ref="KVERB"/>
+                  <REWRI tt:value-ref="REWRI"/>
+                  <BWTIM tt:value-ref="BWTIM"/>
+                  <AWTIM tt:value-ref="AWTIM"/>
+                  <TTIME tt:value-ref="TTIME"/>
+                  <DESTA tt:value-ref="DESTA"/>
+                  <DEEND tt:value-ref="DEEND"/>
+                </ANWKONTI>
+              </tt:loop>
+            </T_ANWKONTI>
+            <T_ABWKONTI>
+              <tt:loop ref="DATA.FT_ABWKONTI">
+                <ABWKONTI>
+                  <INFTY tt:value-ref="INFTY"/>
+                  <SUBTY tt:value-ref="SUBTY"/>
+                  <OBJPS tt:value-ref="OBJPS"/>
+                  <SEQNR tt:value-ref="SEQNR"/>
+                  <ENDDA tt:value-ref="ENDDA"/>
+                  <BEGDA tt:value-ref="BEGDA"/>
+                  <VTKEN tt:value-ref="VTKEN"/>
+                  <BEGUZ tt:value-ref="BEGUZ"/>
+                  <ENDUZ tt:value-ref="ENDUZ"/>
+                  <KTART tt:value-ref="KTART"/>
+                  <ANZHL tt:value-ref="ANZHL"/>
+                  <ZEINH tt:value-ref="ZEINH"/>
+                  <KVERB tt:value-ref="KVERB"/>
+                  <REWRI tt:value-ref="REWRI"/>
+                  <DESTA tt:value-ref="DESTA"/>
+                  <DEEND tt:value-ref="DEEND"/>
+                </ABWKONTI>
+              </tt:loop>
+            </T_ABWKONTI>
+            <T_SKO>
+              <tt:loop ref="DATA.FT_SKO">
+                <SKO>
+                  <ENDDA tt:value-ref="ENDDA"/>
+                  <BEGDA tt:value-ref="BEGDA"/>
+                  <ZTART tt:value-ref="ZTART"/>
+                  <ANZHL tt:value-ref="ANZHL"/>
+                  <ATIME tt:value-ref="ATIME"/>
+                  <OBJPS tt:value-ref="OBJPS"/>
+                  <SEQNR tt:value-ref="SEQNR"/>
+                </SKO>
+              </tt:loop>
+            </T_SKO>
+            <T_ZKO>
+              <tt:loop ref="DATA.FT_ZKO">
+                <ZKO>
+                  <REDAY tt:value-ref="REDAY"/>
+                  <KTTYP tt:value-ref="KTTYP"/>
+                  <INFTY tt:value-ref="INFTY"/>
+                  <SUBTY tt:value-ref="SUBTY"/>
+                  <OBJPS tt:value-ref="OBJPS"/>
+                  <SEQNR tt:value-ref="SEQNR"/>
+                  <ENDDA tt:value-ref="ENDDA"/>
+                  <BEGDA tt:value-ref="BEGDA"/>
+                  <ANZHL tt:value-ref="ANZHL"/>
+                </ZKO>
+              </tt:loop>
+            </T_ZKO>
+            <S_KNTAG>
+              <KNTAG tt:value-ref="DATA.FS_KNTAG.KNTAG"/>
+            </S_KNTAG>
+            <S_BEZUG>
+              <DATUM tt:value-ref="DATA.FS_BEZUG.DATUM"/>
+              <RRABJ tt:value-ref="DATA.FS_BEZUG.RRABJ"/>
+              <RRABP tt:value-ref="DATA.FS_BEZUG.RRABP"/>
+              <RABRJ tt:value-ref="DATA.FS_BEZUG.RABRJ"/>
+              <RABRP tt:value-ref="DATA.FS_BEZUG.RABRP"/>
+            </S_BEZUG>
+            <S_DATES>
+              <EVAL_BEGDA tt:value-ref="DATA.FS_DATES.EVAL_BEGDA"/>
+              <EVAL_ENDDA tt:value-ref="DATA.FS_DATES.EVAL_ENDDA"/>
+              <BEGDA tt:value-ref="DATA.FS_DATES.BEGDA"/>
+              <ENDDA tt:value-ref="DATA.FS_DATES.ENDDA"/>
+              <DNEVA tt:value-ref="DATA.FS_DATES.DNEVA"/>
+              <BEZUG tt:value-ref="DATA.FS_DATES.BEZUG"/>
+            </S_DATES>
+            <MOLGA tt:value-ref="DATA.MOLGA"/>
+          </DATA>
+        </ZST_B2>
+      </tt:loop>
+    </B2>
+  </tt:template>
+</tt:transform>
